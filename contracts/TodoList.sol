@@ -9,5 +9,14 @@ contract TodoList {
     bool completed;
   }
 
-  mapping(uint => Task) tasks;
+  mapping(uint => Task) public tasks;
+
+  constructor() public {
+    createTask("Check out my portfolio!");
+  }
+
+  function createTask(string memory _content) public {
+    taskCount++;
+    tasks[taskCount] = Task(taskCount, _content, false);
+  }
 }
