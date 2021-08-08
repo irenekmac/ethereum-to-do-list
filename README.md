@@ -18,3 +18,5 @@ Learnt how to list tasks in the smart contract (using struct), console, client s
 * JSON
 * Unsigned Integers in solidity (uint)
 * Write data structure in a smart contract using solidity
+* Using web3.js library to connect and talk to the ethereum blockchain
+* How to use MetaMask 
